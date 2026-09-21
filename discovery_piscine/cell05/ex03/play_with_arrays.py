@@ -1,0 +1,17 @@
+#!/usr/bin/env python3
+
+# ลิสต์ตัวเลขตั้งต้นตามโจทย์
+original = [2, 8, 9, 48, 8, 22, -12, 2]
+
+# กรองเฉพาะตัวที่มากกว่า 5 แล้วบวกเพิ่ม 2
+new_array = []
+for x in original:
+    if x > 5:
+        new_array.append(x + 2)
+
+# ใช้ set() ตัดค่าซ้ำออกตามคำแนะนำของโจทย์
+result_set = set(new_array)
+
+# แสดงผลตามตัวอย่าง
+print(original)
+print(result_set)
